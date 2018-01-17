@@ -44,6 +44,20 @@ p {
   margin:0 2% 20px;
 }
 
+@media (min-width: 480px) {
+  .container {
+    width: 470px;
+  }
+  .one-half {
+    width:100%;
+  }
+  .one-third {
+    width:100%;
+  }
+  .one-fourth {
+    width:100%;
+  }
+}
 @media (min-width: 768px) {
   .container {
     width: 750px;
