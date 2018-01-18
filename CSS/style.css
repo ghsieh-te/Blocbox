@@ -302,6 +302,6 @@ header .hero img {
   font-size:13px;
   margin-top: 30px;
 }
-.testimonials blockquote.testimonial-offset{
+.testimonials li.testimonial-offset{
   top: 20px;
 }
