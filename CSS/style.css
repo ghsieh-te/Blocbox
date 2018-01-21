@@ -44,12 +44,26 @@ p {
   margin:0 2% 20px;
 }
 
+@media (min-width: 0px) {
+  .container {
+    width: 470px;
+  }
+  .one-half {
+    width: 100%;
+  }
+  .one-third {
+    width:100%;
+  }
+  .one-fourth {
+    width:100%;
+  }
+}
 @media (min-width: 480px) {
   .container {
     width: 470px;
   }
   .one-half {
-    width:100%;
+    width: 100%;
   }
   .one-third {
     width:100%;
@@ -76,11 +90,16 @@ p {
   .one-fourth {
     width:21%;
   }
+  .testimonial-offset {
+    top: 20px;
+  }
 }
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
   }
+  .testimonial-offset {
+    top: 20px;}
 }
 
 /* HEADER */
@@ -301,9 +320,6 @@ header .hero img {
   text-align: left;
   font-size:13px;
   margin-top: 30px;
-}
-.testimonials li.testimonial-offset{
-  top: 20px;
 }
 
 /* FOOTER */
