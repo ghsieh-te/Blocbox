@@ -70,7 +70,7 @@
 .account-dropit .account-dropit-submenu {
     position: absolute;
     top: -125px;
-    right: 0; /* dropdown left or right */
+    right: 0;
     z-index: 1000;
     display: none;
     min-width: 150px;
@@ -100,7 +100,7 @@
  display: block;
  margin-bottom: 20px;
 }
-.account-dropit .account-dropit-open .daccount-ropit-submenu li:last-child {
+.account-dropit .account-dropit-open .account-dropit-submenu li:last-child {
  margin-bottom: 0px;
 }
 .account-dropit .account-dropit-open .account-dropit-submenu li a {

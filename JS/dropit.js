@@ -63,7 +63,6 @@
                             settings.afterHide.call(this);
                         });
                     }
-
                     // Hide initial submenus (account)
                     $el.addClass('account-dropit')
                     .find('>'+ settings.triggerParentEl +':has('+ settings.submenuEl +')').addClass('account-dropit-trigger')
@@ -107,6 +106,7 @@
                             settings.afterHide.call(this);
                         });
                     }
+
 
                     settings.afterLoad.call(this);
                 });
