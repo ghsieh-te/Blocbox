@@ -58,3 +58,54 @@
  font-family: "Lato", Helvetica, Arial, sans-serif;
  font-weight:100;
 }
+
+/* Account Settings */
+.account-dropit {
+    list-style: none;
+	  padding: 0;
+    margin: 0 0 0;
+    display:inline-block;
+}
+.account-dropit .account-dropit-trigger { position: relative; }
+.account-dropit .account-dropit-submenu {
+    position: absolute;
+    top: -125px;
+    right: 0; /* dropdown left or right */
+    z-index: 1000;
+    display: none;
+    min-width: 150px;
+    list-style: none;
+    padding: 20px;
+    margin: 0 0 20px;
+}
+.account-dropit .account-dropit-open .account-dropit-submenu {
+  display: block;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.30);
+  border-radius: 4px;
+}
+.account-dropit .account-dropit-open .account-dropit-submenu:after {
+ content: " ";
+ position: absolute;
+ border-style: solid;
+ border-width: 8px 8px 0;
+ border-color: #FFFFFF transparent;
+ display: block;
+ width: 0;
+ z-index: 1;
+ top: 117px;
+ right: 10px;
+}
+.account-dropit .account-dropit-open .account-dropit-submenu li {
+ display: block;
+ margin-bottom: 20px;
+}
+.account-dropit .account-dropit-open .daccount-ropit-submenu li:last-child {
+ margin-bottom: 0px;
+}
+.account-dropit .account-dropit-open .account-dropit-submenu li a {
+ color:#34495E;
+ text-decoration: none;
+ font-family: "Lato", Helvetica, Arial, sans-serif;
+ font-weight:100;
+}
