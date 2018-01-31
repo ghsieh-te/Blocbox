@@ -63,50 +63,6 @@
                             settings.afterHide.call(this);
                         });
                     }
-                    // Hide initial submenus (account)
-                    $el.addClass('account-dropit')
-                    .find('>'+ settings.triggerParentEl +':has('+ settings.submenuEl +')').addClass('account-dropit-trigger')
-                    .find(settings.submenuEl).addClass('account-dropit-submenu').hide();
-
-                    // Open on click (account)
-                    $el.off(settings.action).on(settings.action, settings.triggerParentEl +':has('+ settings.submenuEl +') > '+ settings.triggerEl +'', function(){
-                        // Close click menu's if clicked again (account)
-                        if(settings.action == 'click' && $(this).parents(settings.triggerParentEl).hasClass('account-dropit-open')){
-                            settings.beforeHide.call(this);
-                            $(this).parents(settings.triggerParentEl).removeClass('account-dropit-open').find(settings.submenuEl).hide();
-                            settings.afterHide.call(this);
-                            return false;
-                        }
-
-                        // Hide open menus (account)
-                        settings.beforeHide.call(this);
-                        $('.account-dropit-open').removeClass('account-dropit-open').find('.account-dropit-submenu').hide();
-                        settings.afterHide.call(this);
-
-                        // Open this menu (account)
-                        settings.beforeShow.call(this);
-                        $(this).parents(settings.triggerParentEl).addClass('account-dropit-open').find(settings.submenuEl).show();
-                        settings.afterShow.call(this);
-
-                        return false;
-                    });
-
-                    // Close if outside click (account)
-                    $(document).on('click', function(){
-                        settings.beforeHide.call(this);
-                        $('.account-dropit-open').removeClass('account-dropit-open').find('.account-dropit-submenu').hide();
-                        settings.afterHide.call(this);
-                    });
-
-                    // If hover (account)
-                    if(settings.action == 'mouseenter'){
-                        $el.on('mouseleave', '.account-dropit-open', function(){
-                            settings.beforeHide.call(this);
-                            $(this).removeClass('account-dropit-open').find(settings.submenuEl).hide();
-                            settings.afterHide.call(this);
-                        });
-                    }
-
 
                     settings.afterLoad.call(this);
                 });
